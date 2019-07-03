@@ -11,5 +11,4 @@ EXPOSE 8080
 WORKDIR /opt/tomcat/bin
 CMD ["./catalina.sh", "debug"]
 CMD ["./catalina.sh", "run"]
-ADD ./target/SampleTest.war /opt/tomcat/webapps/
 
