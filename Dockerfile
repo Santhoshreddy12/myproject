@@ -1,4 +1,4 @@
-:wqFROM centos
+FROM centos
 MAINTAINER santhosh <santhu194@gmail.com>
 LABEL owner="santhosh" \
              version="2.5.2"
