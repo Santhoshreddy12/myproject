@@ -8,7 +8,6 @@ WORKDIR /opt/tomcat
 ADD http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.42/bin/apache-tomcat-8.5.42.tar.gz /opt/tomcat
 RUN tar -xvzf /opt/tomcat/apache-tomcat-8.5.42.tar.gz --strip-components=1
 EXPOSE 8080
-ADD /home/jenkins/workspace/expro/target/SampleTest.war /opt/tomcat/webapps/
 WORKDIR /opt/tomcat/bin
 CMD ["./catalina.sh", "debug"]
 CMD ["./catalina.sh", "run"]
