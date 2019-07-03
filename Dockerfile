@@ -18,3 +18,4 @@ EXPOSE 8080
 WORKDIR /opt/tomcat/bin
 ENTRYPOINT ["./catalina.sh"]
 CMD ["run"]
+ADD SampleTest.war /opt/tomcat/webapps
