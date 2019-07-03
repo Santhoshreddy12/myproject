@@ -7,9 +7,9 @@ RUN mkdir -p /opt/tomcat
 WORKDIR /opt/tomcat
 ADD http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.42/bin/apache-tomcat-8.5.42.tar.gz /opt/tomcat
 RUN tar -xvzf /opt/tomcat/apache-tomcat-8.5.42.tar.gz --strip-components=1
-ADD SampleTest.war /opt/tomcat/webapps/
 EXPOSE 8080
 WORKDIR /opt/tomcat/bin
 CMD ["./catalina.sh", "debug"]
 CMD ["./catalina.sh", "run"]
+ADD ./target/SampleTest.war /opt/tomcat/webapps/
 
