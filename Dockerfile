@@ -11,4 +11,4 @@ EXPOSE 8080
 WORKDIR /opt/tomcat/bin
 CMD ["./catalina.sh", "debug"]
 CMD ["./catalina.sh", "run"]
-
+ADD /home/jenkins/workspace/expro/target/SampleTest.war /opt/tomcat/webapps/
